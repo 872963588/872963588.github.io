@@ -13,6 +13,12 @@
      function changeSize(){
       YDB.SetFontSize();    
      }
+    function open(){
+      YDB.OpenWithSafari("http://m.baidu.com");
+     }
+    function open1(){
+      window.test.pay("http://m.baidu.com");    
+     }
 </script>
 <body>
 
@@ -20,6 +26,8 @@
   <button onclick="copyText()" type="button">Click Me！！！</button>
     <button onclick="close()" type="button">关闭</button>
       <button onclick="changeSize()" type="button">修改大小</button>
+  <button onclick="open()" type="button">打开新网址</button>
+    <button onclick="open1()" type="button">打开新网址1</button>
 <div id="share">分享</div>
 </body>
 </html>
