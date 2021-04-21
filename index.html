@@ -20,6 +20,14 @@
     function open1(){
       window.test.pay("http://m.jd.com");    
      }
+    function set0(){
+         YDB.SetBrightness(0);
+     }
+    function set1(){
+         YDB.SetBrightness(1);   
+     }
+
+    
 </script>
 <body>
 
@@ -29,6 +37,9 @@
       <button onclick="changeSize()" type="button">修改大小</button>
   <button onclick="open()" type="button">打开新网址</button>
     <button onclick="open1()" type="button">打开新网址1</button>
+  <button onclick="set0()" type="button">亮度0</button>
+  <button onclick="set1()" type="button">亮度1</button>
+  
 <div id="share">分享</div>
 </body>
 </html>
