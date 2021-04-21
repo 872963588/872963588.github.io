@@ -3,18 +3,15 @@
   <script src="https://staticorigin.ydbimg.com/API/YdbOnline.js" type="text/javascript"></script>
   </head>
   <script type="text/javascript">
-var YDB = new YDBOBJ();
-     $(function () {
-            /*分享*/
-            $("#share").click(function () {
-                YDB.Share("分享标题", "分享内容", "http://www.yundabao.cn/JsSdkDemo/images/lxrc_er.png", "http://www.yundabao.cn");
-            });
-        }); 
+    var YDB = new YDBOBJ();
+    function serch(){
+    window.open('a/'+value);
+}
 </script>
 <body>
 
 <button type="button">Click Me!</button>
-  <button type="button">Click Me！！！</button>
+  <button onclick="copyText()" type="button">Click Me！！！</button>
 <div id="share">分享</div>
 </body>
 </html>
