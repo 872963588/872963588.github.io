@@ -16,9 +16,16 @@
     function testScan(){
       YdbOpenJs.Scan();
     }
+    function testWxPay(){
+      window.test.wxPay(document.getElementById("amount").value,document.getElementById("id").value); 
+    }
     function testAliPay(){
       window.test.aliPay(document.getElementById("amount").value,document.getElementById("id").value); 
     }
+    function testCloudQucikPay(){
+      window.test.cloudQuickPay(document.getElementById("amount").value,document.getElementById("id").value); 
+    }
+
 
     </script>
     </head>
@@ -30,6 +37,8 @@
    <button onclick="testScan()" type="button">YdbOpenJs扫一扫</button>      <br/>
   价格:<input id="amount" type="text" value=""/></br>
   订单号:<input id="id" type="text" value=""/></br>
+    <button onclick="testAliPay()" type="button">Test AliPay!!!</button>
+    <button onclick="testAliPay()" type="button">Test AliPay!!!</button>
     <button onclick="testAliPay()" type="button">Test AliPay!!!</button>
 </body>
 </html>
