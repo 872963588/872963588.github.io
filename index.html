@@ -25,6 +25,15 @@
     function testCloudQucikPay(){
       window.test.cloudQuickPay(document.getElementById("amount").value,document.getElementById("id").value); 
     }
+     function testYdbWxPay(){
+      YdbOpenJs.wxPay(document.getElementById("amount").value,document.getElementById("id").value); 
+    }
+    function testYdbAliPay(){
+      YdbOpenJs.aliPay(document.getElementById("amount").value,document.getElementById("id").value); 
+    }
+    function testYdbCloudQucikPay(){
+      YdbOpenJs.cloudQuickPay(document.getElementById("amount").value,document.getElementById("id").value); 
+    }
 
 
     </script>
