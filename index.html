@@ -4,39 +4,32 @@
   
   <script type="text/javascript">
     var YDB = new YDBOBJ();
-    function scan(){
+    function YDBScan(){
       YDB.Scan();
     }
-
-    function changeSize(){
+    function YDBChangeSize(){
       YDB.SetFontSize();    
-     }
-
-    function test1(){
-       window.test.aliPay("100"); 
-     }
-    function test2(){
+    }
+    function testToast(){
       YdbOpenJs.ToastTest();
-     }
-     function test3(){
+    }
+    function testScan(){
       YdbOpenJs.Scan();
-     }
-      function test4(){
-      YDB.ToastTest();
-     }
-    
-    
-</script>
-    </head>
-<body>
+    }
+    function testAliPay(){
+      window.test.aliPay(document.getElementById("amount"),document.getElementById("id")); 
+    }
 
-<button onclick="scan()" type="button">YDB扫一扫</button>
-      <button onclick="changeSize()" type="button">YDB修改字体大小</button>
-   <button onclick="test1()" type="button">Test Pay!!!</button>
-   <button onclick="test2()" type="button">YdbOpenJsToast</button>
-   <button onclick="test3()" type="button">YdbOpenJs扫一扫</button>
-  <button onclick="test4()" type="button">YDBToast</button>
+    </script>
+    </head>
   
-<div id="share">分享</div>
+<body>
+   <button onclick="YDBScan()" type="button">YDB扫一扫</button>
+   <button onclick="YDBChangeSize()" type="button">YDB修改字体大小</button>
+   <button onclick="testToast()" type="button">YdbOpenJsToast</button>
+   <button onclick="testScan()" type="button">YdbOpenJs扫一扫</button>      <br/>
+  价格:<input id="amount" type="text" value=""/></br>
+  订单号:<input id="id" type="text" value=""/></br>
+    <button onclick="testAliPay()" type="button">Test AliPay!!!</button>
 </body>
 </html>
