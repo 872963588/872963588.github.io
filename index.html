@@ -6,6 +6,7 @@
     var YDB = new YDBOBJ();
       function YDBClean(){
      YDB.Opengps();
+        YDB.OpenGPS("1234444");
     }
     function YDBScan(){
       YDB.Scan();
@@ -43,7 +44,7 @@
     </head>
   
 <body>
-  <button onclick="YDBClean()" type="button">YDB清理缓存</button>
+
    <button onclick="YDBScan()" type="button">YDB扫一扫</button>
    <button onclick="YDBChangeSize()" type="button">YDB修改字体大小</button>
    <button onclick="testToast()" type="button">YdbOpenJsToast</button>
@@ -56,5 +57,8 @@
 <button onclick="testYdbWxPay()" type="button">Test Ydb WxPay!!!</button>
     <button onclick="testYdbAliPay()" type="button">Test Ydb AliPay!!!</button>
     <button onclick="testYdbCloudQucikPay()" type="button">Test Ydb CloudQucikPay!!!</button> <br/>
+
+ <br/> <br/> <br/> <br/> <br/>
+  <button onclick="YDBClean()" type="button">YDB定位测试</button>
 </body>
 </html>
