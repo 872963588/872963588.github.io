@@ -4,6 +4,9 @@
   
   <script type="text/javascript">
     var YDB = new YDBOBJ();
+      function YDBClean(){
+      YDB.ClearCache();
+    }
     function YDBScan(){
       YDB.Scan();
     }
@@ -40,6 +43,7 @@
     </head>
   
 <body>
+  <button onclick="YDBClean()" type="button">YDB清理缓存</button>
    <button onclick="YDBScan()" type="button">YDB扫一扫</button>
    <button onclick="YDBChangeSize()" type="button">YDB修改字体大小</button>
    <button onclick="testToast()" type="button">YdbOpenJsToast</button>
