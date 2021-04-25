@@ -10,6 +10,28 @@
         YDB.OpenGPS("1234444");
     }
     
+    
+      function YDBGetGPS(){
+        YDB.GetGPS("DoNothing");
+    }
+    
+      function YDBGpsState(){
+      YDB.GpsState("State");
+    }
+    function State(info) {
+                var gps = info.gps;
+                if(!gps) {
+                    YDB.Opengps();
+                }
+      console.log(info);
+//                 localStorage.setItem('GpsState', gps);
+            }
+    
+       function DoNothing(){
+//         YDB.GetGPS("DoNothing");
+    }
+    
+    
     function YDBScan(){
       YDB.Scan();
     }
@@ -62,5 +84,7 @@
 
  <br/> <br/> <br/> <br/> <br/>
   <button onclick="YDBClean()" type="button">YDB定位测试</button>
+<button onclick="YDBGetGPS()" type="button">YDB定位测试</button>
+<button onclick="YDBGpsState()" type="button">YDB定位测试</button>
 </body>
 </html>
