@@ -5,9 +5,11 @@
   <script type="text/javascript">
     var YDB = new YDBOBJ();
       function YDBClean(){
+         YDB.ClearCache();
      YDB.Opengps();
         YDB.OpenGPS("1234444");
     }
+    
     function YDBScan(){
       YDB.Scan();
     }
