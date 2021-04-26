@@ -1,0 +1,29 @@
+<html>
+  <head>
+  <script src="https://staticorigin.ydbimg.com/API/YdbOnline.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    var YDB = new YDBOBJ();
+      
+     function testYdbWxPay(){
+      YdbOpenJs.QMFWxPay("123456",document.getElementById("id").value,"name","subscribe"document.getElementById("amount").value,""); 
+    }
+    function testYdbAliPay(){
+      YdbOpenJs.QMFZfbPay("123456",document.getElementById("id").value,"name","subscribe"document.getElementById("amount").value); 
+    }
+    function testYdbCloudQucikPay(){
+      YdbOpenJs.QMFYsfPay("898310148160568","123456",document.getElementById("id").value,"name","subscribe"document.getElementById("amount").value); 
+    }
+    </script>
+    </head>
+<body>
+
+  价格:<input id="amount" type="text" value=""/></br>
+  订单号:<input id="id" type="text" value=""/></br>
+    <br/> <br/>
+<button onclick="testYdbWxPay()" type="button">Test Ydb WxPay!!!</button>
+    <button onclick="testYdbAliPay()" type="button">Test Ydb AliPay!!!</button>
+    <button onclick="testYdbCloudQucikPay()" type="button">Test Ydb CloudQucikPay!!!</button> <br/>
+
+ <br/> <br/> <br/>
+</body>
+</html>
