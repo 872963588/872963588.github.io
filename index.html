@@ -1,95 +1,30 @@
+
 <html>
   <head>
-  
   <script src="https://staticorigin.ydbimg.com/API/YdbOnline.js" type="text/javascript"></script>
-  
   <script type="text/javascript">
     var YDB = new YDBOBJ();
-      function YDBClean(){
-        // YDB.ClearCache();
-     YDB.Opengps();
-        YDB.OpenGPS("1234444");
-    }
-    
-    
-      function YDBGetGPS(){
-        YDB.GetGPS("DoNothing");
-    }
-    
-      function YDBGpsState(){
-      YDB.GpsState("State");
-    }
-    function State(info) {
-                var gps = info.gps;
-                if(!gps) {
-                    YDB.Opengps();
-                }
-      console.log(info);
-//                 localStorage.setItem('GpsState', gps);
-            }
-    
-       function DoNothing(){
-//         YDB.GetGPS("DoNothing");
-    }
-    
-    
-    function YDBScan(){
-      YDB.Scan();
-    }
-    function YDBChangeSize(){
-      YDB.SetFontSize();    
-    }
-    function testToast(){
-      YdbOpenJs.ToastTest();
-    }
-    function testScan(){
-      YdbOpenJs.Scan();
-    }
-    function testWxPay(){
-      window.test.wxPay(document.getElementById("amount").value,document.getElementById("id").value); 
-    }
-    function testAliPay(){
-      window.test.aliPay(document.getElementById("amount").value,document.getElementById("id").value); 
-    }
-    function testCloudQucikPay(){
-      window.test.cloudQuickPay(document.getElementById("amount").value,document.getElementById("id").value); 
-    }
+      
      function testYdbWxPay(){
-      YdbOpenJs.QMFWxPay("123456",document.getElementById("id").value,"name","subscribe",document.getElementById("amount").value,""); 
+      YdbOpenJs.QMFWxPay("123456",document.getElementById("id").value,"name","subscribe"document.getElementById("amount").value,""); 
     }
     function testYdbAliPay(){
-      YdbOpenJs.QMFZfbPay("123456",document.getElementById("id").value,"name","subscribe",document.getElementById("amount").value); 
+      YdbOpenJs.QMFZfbPay("123456",document.getElementById("id").value,"name","subscribe"document.getElementById("amount").value); 
     }
     function testYdbCloudQucikPay(){
-      YdbOpenJs.QMFYsfPay("898310173992528","00000001",document.getElementById("id").value,"name","subscribe",document.getElementById("amount").value); 
+      YdbOpenJs.QMFYsfPay("898310148160568","123456",document.getElementById("id").value,"name","subscribe"document.getElementById("amount").value); 
     }
-
-
     </script>
     </head>
-  
 <body>
 
-   <button onclick="YDBScan()" type="button">YDB扫一扫</button>
-   <button onclick="YDBChangeSize()" type="button">YDB修改字体大小</button>
-   <button onclick="testToast()" type="button">YdbOpenJsToast</button>
-   <button onclick="testScan()" type="button">YdbOpenJs扫一扫</button>      <br/>
   价格:<input id="amount" type="text" value=""/></br>
   订单号:<input id="id" type="text" value=""/></br>
-    <button onclick="testWxPay()" type="button">Test WxPay!!!</button>
-    <button onclick="testAliPay()" type="button">Test AliPay!!!</button>
-    <button onclick="testCloudQucikPay()" type="button">Test CloudQucikPay!!!</button> <br/><br/><br/>
+    <br/> <br/>
 <button onclick="testYdbWxPay()" type="button">Test Ydb WxPay!!!</button>
     <button onclick="testYdbAliPay()" type="button">Test Ydb AliPay!!!</button>
     <button onclick="testYdbCloudQucikPay()" type="button">Test Ydb CloudQucikPay!!!</button> <br/>
 
- <br/> <br/> <br/> <br/> <br/>
-  <button onclick="YDBClean()" type="button">YDB定位测试</button>
-<button onclick="YDBGetGPS()" type="button">YDB定位测试</button>
-<button onclick="YDBGpsState()" type="button">YDB定位测试</button>
-
-<a href="tel:168-1686-16888">168-1686-16888</a>
-
-<a href="sms:18888888888">发短信</a>
+ <br/> <br/> <br/>
 </body>
 </html>
