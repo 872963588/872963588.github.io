@@ -55,13 +55,13 @@
       window.test.cloudQuickPay(document.getElementById("amount").value,document.getElementById("id").value); 
     }
      function testYdbWxPay(){
-      YdbOpenJs.QMFWxPay(document.getElementById("amount").value,document.getElementById("id").value); 
+      YdbOpenJs.QMFWxPay("123456",document.getElementById("id").value,"name","subscribe"document.getElementById("amount").value,""); 
     }
     function testYdbAliPay(){
-      YdbOpenJs.QMFZfbPay(document.getElementById("amount").value,document.getElementById("id").value); 
+      YdbOpenJs.QMFZfbPay("123456",document.getElementById("id").value,"name","subscribe"document.getElementById("amount").value); 
     }
     function testYdbCloudQucikPay(){
-      YdbOpenJs.QMFYsfPay(document.getElementById("amount").value,document.getElementById("id").value); 
+      YdbOpenJs.QMFYsfPay("898310148160568","123456",document.getElementById("id").value,"name","subscribe"document.getElementById("amount").value); 
     }
 
 
