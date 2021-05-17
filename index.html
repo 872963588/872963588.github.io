@@ -18,6 +18,11 @@
       YdbOpenJs.QMFYsfPay("898310173992528","00000001","388535555",document.getElementById("id").value,"subscribe",document.getElementById("amount").value,
                           "WWW.SXYBYYWL.COM","","pTC2seXt4xfPcZTZy64e6bnQyHBTPmPKYkHjtRZdN8nE5b43","","www.jd.com","www.baidu.com"); 
     }
+    
+    
+    function testWX(){
+      YDB.SetWxpayInfo("这个是名称","这个是描述","100",document.getElementById("id").value,"this is attach");
+    }
     </script>
     </head>
 <body>
@@ -28,6 +33,8 @@
 <button onclick="testYdbWxPay()" type="button">Test Ydb WxPay!!!</button>
     <button onclick="testYdbAliPay()" type="button">Test Ydb AliPay!!!</button>
     <button onclick="testYdbCloudQucikPay()" type="button">Test Ydb CloudQucikPay!!!</button> <br/>
+<br/><br/><br/>
+<button onclick="testWX()" type="button">测试微信支付</button> <br/>
 
  <br/> <br/> <br/>
 </body>
