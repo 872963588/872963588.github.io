@@ -6,9 +6,9 @@
     var YDB = new YDBOBJ();
       
      function testYdbWxPay(){
-      YdbOpenJs.QMFWxPay("898310173992528","123456","388535555",document.getElementById("id").value,
-                         "subscribe",document.getElementById("amount").value,
-                         "WWW.SXYBYYWL.COM","","pTC2seXt4xfPcZTZy64e6bnQyHBTPmPKYkHjtRZdN8nE5b43","",""); 
+      YdbOpenJs.QMFWxPay("89814085122010B","08056181","QRPAYDEFAULT","11J82021517162741664805","测试订单",document.getElementById("id").value,
+                         document.getElementById("amount").value,"WWW.SXYBYYWL.COM",
+                         "https://api-mop.chinaums.com/v1/netpay/trade/precreate","pTC2seXt4xfPcZTZy64e6bnQyHBTPmPKYkHjtRZdN8nE5b43","",""); 
     }
     function testYdbAliPay(){
       YdbOpenJs.QMFZfbPay("898310173992528","123456","388535555",document.getElementById("id").value,"subscribe",document.getElementById("amount").value,
@@ -18,7 +18,6 @@
       YdbOpenJs.QMFYsfPay("898310173992528","00000001","388535555",document.getElementById("id").value,"subscribe",document.getElementById("amount").value,
                           "WWW.SXYBYYWL.COM","","pTC2seXt4xfPcZTZy64e6bnQyHBTPmPKYkHjtRZdN8nE5b43","","www.jd.com","www.baidu.com"); 
     }
-    
     
     function testWX(){
       YDB.SetWxpayInfo("这个是名称","这个是描述","100",document.getElementById("id").value,"this is attach");
