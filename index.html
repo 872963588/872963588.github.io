@@ -6,19 +6,19 @@
     var YDB = new YDBOBJ();
       
      function testYdbWxPay(){
-      YDB.QMFWxPay("89814085122010B","08056181","QRPAYDEFAULT",document.getElementById("id").value,"测试订单",
+      YdbOpenJs.QMFWxPay("89814085122010B","08056181","QRPAYDEFAULT",document.getElementById("id").value,"测试订单",
                          document.getElementById("amount").value,"WWW.SXYBYYWL.COM",
                          "https://api-mop.chinaums.com/v1/netpay/trade/precreate","pTC2seXt4xfPcZTZy64e6bnQyHBTPmPKYkHjtRZdN8nE5b43","","http://ybapp.ybyywl.com/yl/notify"); 
     }
     function testYdbAliPay(){
-      YDB.QMFZfbPay("89814085122010B","08056181","QRPAYDEFAULT",document.getElementById("id").value,"测试订单",
+      YdbOpenJs.QMFZfbPay("89814085122010B","08056181","QRPAYDEFAULT",document.getElementById("id").value,"测试订单",
                          document.getElementById("amount").value,"WWW.SXYBYYWL.COM",
                          "https://api-mop.chinaums.com/v1/netpay/trade/precreate","pTC2seXt4xfPcZTZy64e6bnQyHBTPmPKYkHjtRZdN8nE5b43","http://ybapp.ybyywl.com/yl/notify"); 
 //       YdbOpenJs.QMFZfbPay("898310173992528","123456","388535555",document.getElementById("id").value,"subscribe",document.getElementById("amount").value,
 //                           "WWW.SXYBYYWL.COM","","pTC2seXt4xfPcZTZy64e6bnQyHBTPmPKYkHjtRZdN8nE5b43",""); 
     }
     function testYdbCloudQucikPay(){
-      YDB.QMFYsfPay("89814085122010B","08056181","QRPAYDEFAULT",document.getElementById("id").value,"测试订单",
+      YdbOpenJs.QMFYsfPay("89814085122010B","08056181","QRPAYDEFAULT",document.getElementById("id").value,"测试订单",
                          document.getElementById("amount").value,"WWW.SXYBYYWL.COM",
                          "https://api-mop.chinaums.com/v1/netpay/trade/precreate","pTC2seXt4xfPcZTZy64e6bnQyHBTPmPKYkHjtRZdN8nE5b43","www.baidu.com","www.baidu.com","http://ybapp.ybyywl.com/yl/notify"); 
     }
