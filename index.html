@@ -24,6 +24,9 @@
     function testWX(){
       YDB.SetWxpayInfo("这个是名称","这个是描述","100",document.getElementById("id").value,"this is attach");
     }
+    function testAli(){
+      YDB.SetRSA2AlipayInfo("这个是名称","这个是描述","100",document.getElementById("id").value,"this is attach");
+    }
     </script>
     </head>
 <body>
@@ -35,7 +38,7 @@
     <button onclick="testYdbAliPay()" type="button">Test Ydb AliPay!!!</button>
     <button onclick="testYdbCloudQucikPay()" type="button">Test Ydb CloudQucikPay!!!</button> <br/>
 <br/><br/><br/>
-<button onclick="testWX()" type="button">测试微信支付</button> <br/>
+<button onclick="testWX()" type="button">测试微信支付</button>       <button onclick="testAli()" type="button">测试支付宝支付</button><br/>
 
  <br/> <br/> <br/>
 </body>
