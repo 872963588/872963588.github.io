@@ -27,6 +27,9 @@
     function testAli(){
       YDB.SetRSA2AlipayInfo("这个是名称","这个是描述","0.01",document.getElementById("id").value);
     }
+    function photoEdit(){
+      YdbOpenJs.photoEdit();
+    }
     </script>
     </head>
 <body>
@@ -41,5 +44,6 @@
 <button onclick="testWX()" type="button">测试微信支付</button>       <button onclick="testAli()" type="button">测试支付宝支付</button><br/>
 
  <br/> <br/> <br/>
+<button onclick="photoEdit()" type="button">图片处理</button>
 </body>
 </html>
