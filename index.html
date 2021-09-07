@@ -61,6 +61,12 @@ document.documentElement.addEventListener('touchend', function (event) {
     function photoEdit(){
       YdbOpenJs.GetScan("a111");
     }
+function selectLocation(){
+      YdbOpenJs.GetAddress("a111");
+    }
+function phoneNumLog(){
+      YdbOpenJs.JGLogin("a111","123465");
+    }
     
     function jumpMiniWX(){
       YDB.jumpMiniWX("wxde8ac0a21135c07d","/index/pages/h5/h5?weburl=https%3A%2F%2Frunion.meituan.com%2Furl%3Fkey%3Da144a9fa40a42c55af00214bb4bb3993971%26url%3Dhttps%253A%252F%252Fi.meituan.com%252Fawp%252Fhfe%252Fblock%252Fa13b87919a9ace9cfab4%252F89400%252Findex.html%253Fappkey%253Da144a9fa40a42c55af00214bb4bb3993971%253A2dingdanxia123456%26sid%3D2dingdanxia123456");
@@ -83,5 +89,9 @@ document.documentElement.addEventListener('touchend', function (event) {
 <button onclick="photoEdit()" type="button">图片处理</button>
 
 <button onclick="photoEdit()" type="button">小程序跳转</button>
+
+
+<button onclick="selectLocation()" type="button">地址选择</button>
+<button onclick="phoneNumLog()" type="button">一键登录</button>
 </body>
 </html>
