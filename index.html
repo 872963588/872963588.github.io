@@ -50,7 +50,7 @@ document.documentElement.addEventListener('touchend', function (event) {
     }
     
     function testWX(){
-      YDB.SetWxpayInfo("这个是名称","这个是描述","0.01",document.getElementById("id").value,"this is attach");
+      YDB.SetWxpayInfo("这个是名称","这个是描述",document.getElementById("amount").value,document.getElementById("id").value,"this is attach");
     }
     function testAli(){
       YDB.SetRSA2AlipayInfo("这个是名称","这个是描述","0.01",document.getElementById("id").value);
