@@ -82,6 +82,10 @@ function phoneNumLog(){
       YdbOpenJs.JSDShare("1","https://avatar.csdnimg.cn/5/F/B/0_weixin_44341175.jpg");
     }
     
+    function GetDeviceInformation(){
+      YdbOpenJs.GetDeviceInformation("adfas");
+    }
+    
     function OpenWithSafari(){
       YdbOpenJs.OpenWithSafari("https://www.baidu.com");
     }
@@ -117,5 +121,8 @@ function phoneNumLog(){
 <button onclick="OpenWithSafari()" type="button">跳转到浏览器打开</button>
 
 <button onclick="ShareWxMini()" type="button">分享小程序</button>
+
+<button onclick="GetDeviceInformation()" type="button">获取设备信息</button>
+
 </body>
 </html>
