@@ -92,6 +92,11 @@ function phoneNumLog(){
     function ShareWxMini(){
       YdbOpenJs.ShareWxMini("123","456","https://www.jiusuding.com/img/index_bgdd.089f04e0.png","https://www.baidu.com","gh_07da81439b16","pages/login/index?chareName=1KPVLFEGZY",);
     }
+    
+    function AudioRecord(){
+      YdbOpenJs.AudioRecord("https://www.baidu.com","testAudio");
+    }
+    
     </script>
     </head>
 <body>
@@ -122,7 +127,9 @@ function phoneNumLog(){
 
 <button onclick="ShareWxMini()" type="button">分享小程序</button>
 
-<button onclick="GetDeviceInformation()" type="button">获取设备信息1</button>
+<button onclick="GetDeviceInformation()" type="button">获取设备信息</button>
+
+<button onclick="AudioRecord()" type="button">获取设备信息</button>
 
 </body>
 </html>
