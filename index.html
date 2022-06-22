@@ -100,6 +100,12 @@ function phoneNumLog(){
     function GetAddress(){
       YdbOpenJs.GetAddress("test");
     }
+    function turnOnGeTuiPush(){
+      YdbOpenJs.turnOnGeTuiPush();
+    }
+    function turnOffGetuiPush(){
+      YdbOpenJs.turnOffGetuiPush("test");
+    }
     function test(){
     }
     </script>
@@ -137,5 +143,8 @@ function phoneNumLog(){
 <button onclick="AudioRecord()" type="button">录音测试</button>
 </br></br>
 <button onclick="GetAddress()" type="button">定位</button>
+</br></br>
+<button onclick="turnOnGeTuiPush()" type="button">关闭个推推送</button>
+<button onclick="turnOffGetuiPush()" type="button">开启个推推送</button>
 </body>
 </html>
