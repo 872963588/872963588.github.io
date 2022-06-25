@@ -106,6 +106,12 @@ function phoneNumLog(){
     function turnOffGetuiPush(){
       YDB.TurnOffGetuiPush();
     }
+    function turnOnUmengPush(){
+      YdbOpenJs.turnOnUmengPush();
+    }
+    function turnOffUmengPush(){
+      YdbOpenJs.turnOffUmengPush();
+    }
     function test(){
     }
     </script>
@@ -146,5 +152,8 @@ function phoneNumLog(){
 </br></br>
 <button onclick="turnOnGeTuiPush()" type="button">关闭个推推送</button>
 <button onclick="turnOffGetuiPush()" type="button">开启个推推送</button>
+</br></br>
+<button onclick="turnOnUmengPush()" type="button">关闭友盟推送</button>
+<button onclick="turnOffUmengPush()" type="button">开启友盟推送</button>
 </body>
 </html>
