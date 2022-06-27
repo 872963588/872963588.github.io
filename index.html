@@ -112,6 +112,12 @@ function phoneNumLog(){
     function turnOffUmengPush(){
       YdbOpenJs.turnOffUmengPush();
     }
+    function turnOnJPush(){
+      YdbOpenJs.turnOnJPush();
+    }
+    function turnOffJPush(){
+      YdbOpenJs.turnOffJPush();
+    }
     function test(){
     }
     </script>
@@ -155,5 +161,8 @@ function phoneNumLog(){
 </br></br>
 <button onclick="turnOnUmengPush()" type="button">关闭友盟推送</button>
 <button onclick="turnOffUmengPush()" type="button">开启友盟推送</button>
+</br></br>
+<button onclick="turnOffJPush()" type="button">关闭极光推送</button>
+<button onclick="turnOnJPush()" type="button">开启极光推送</button>
 </body>
 </html>
