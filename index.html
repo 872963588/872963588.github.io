@@ -126,6 +126,9 @@ function phoneNumLog(){
     function Share(){
       YdbOpenJs.Share("","","https://img2.baidu.com/it/u=4249911,372943384&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500","");
     }
+function sharePhoto(){
+      YdbOpenJs.sharePhoto();
+    }
     </script>
     </head>
 <body>
@@ -174,5 +177,7 @@ function phoneNumLog(){
 <button onclick="scan()" type="button">扫一扫</button>
 </br></br>
 <button onclick="scan()" type="button">分享</button>
+</br></br>
+<button onclick="sharePhoto()" type="button">分享图片</button>
 </body>
 </html>
