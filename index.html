@@ -137,6 +137,16 @@ function sharePhoto(){
         element.webkitRequestFullScreen();
       }
     }
+        function launchFullScreen(element) {
+        YdbOpenJs.IsShowLandcape(1);
+      if(element.requestFullScreen) {
+        element.requestFullScreen();
+      } else if(element.mozRequestFullScreen) {
+        element.mozRequestFullScreen();
+      } else if(element.webkitRequestFullScreen) {
+        element.webkitRequestFullScreen();
+      }
+    }
     
     </script>
     </head>
@@ -193,6 +203,6 @@ function sharePhoto(){
         <button type="button" style="text-align: center;" onclick="launchFullScreen(document.getElementById('video1'))">全屏</button>
      </br></br>
   <video id="video2" src="http://vjs.zencdn.net/v/oceans.mp4" controls="controls" autoplay height="100%" width="100%">您的浏览器不支持。</video>
-        <button type="button" style="text-align: center;" onclick="launchFullScreen(document.getElementById('video2'))">全屏</button>
+        <button type="button" style="text-align: center;" onclick="launchFullScreen1(document.getElementById('video2'))">全屏</button>
 </body>
 </html>
