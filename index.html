@@ -72,7 +72,9 @@ function phoneNumLog(){
     function JGtest(token){
       window.alert(token);
     }
-    
+    function JGtestprint(){
+      window.supmobilejs.openQRCode(test());
+    }
     function jumpMiniWX(){
       YDB.jumpMiniWX("wxde8ac0a21135c07d","/index/pages/h5/h5?weburl=https%3A%2F%2Frunion.meituan.com%2Furl%3Fkey%3Da144a9fa40a42c55af00214bb4bb3993971%26url%3Dhttps%253A%252F%252Fi.meituan.com%252Fawp%252Fhfe%252Fblock%252Fa13b87919a9ace9cfab4%252F89400%252Findex.html%253Fappkey%253Da144a9fa40a42c55af00214bb4bb3993971%253A2dingdanxia123456%26sid%3D2dingdanxia123456");
     }
@@ -198,6 +200,8 @@ function sharePhoto(){
 <button onclick="Share()" type="button">分享</button>
 </br></br>
 <button onclick="sharePhoto()" type="button">分享图片</button>
+</br></br>
+  <button onclick="JGtestprint()" type="button">测试打印</button>
 </br></br>
   <video id="video1" src="https://gxyzpt.oss-cn-beijing.aliyuncs.com/1.mp4" controls="controls" autoplay height="100%" width="100%">您的浏览器不支持。</video>
         <button type="button" style="text-align: center;" onclick="launchFullScreen(document.getElementById('video1'))">全屏</button>
