@@ -75,7 +75,15 @@ function phoneNumLog(){
     function JGtestprint(){
       window.supmobilejs.referenceChooseResult("{"templateName":"test.cpt","parameterMap":{"id":1}}",test());
     }
-   
+    function JGtestprinta(){
+      window.supmobilejs.referenceChooseResult("1234",test());
+    }
+     function JGtestprintb(){
+      window.supmobilejs.testPrint("123",test());
+    }
+    function JGtestprintb(){
+      window.testPrint("123",test());
+    }
     function jumpMiniWX(){
       YDB.jumpMiniWX("wxde8ac0a21135c07d","/index/pages/h5/h5?weburl=https%3A%2F%2Frunion.meituan.com%2Furl%3Fkey%3Da144a9fa40a42c55af00214bb4bb3993971%26url%3Dhttps%253A%252F%252Fi.meituan.com%252Fawp%252Fhfe%252Fblock%252Fa13b87919a9ace9cfab4%252F89400%252Findex.html%253Fappkey%253Da144a9fa40a42c55af00214bb4bb3993971%253A2dingdanxia123456%26sid%3D2dingdanxia123456");
     }
@@ -150,15 +158,7 @@ function sharePhoto(){
         element.webkitRequestFullScreen();
       }
     }
-     function test1(){
-      window.supmobilejs.referenceChooseResult("1234",test());
-    }
-     function test2(){
-      window.supmobilejs.testPrint("123",test());
-    }
-    function test3(){
-      window.testPrint("123",test());
-    }
+    
     </script>
     </head>
 <body>
@@ -212,11 +212,11 @@ function sharePhoto(){
 </br></br>
   <button onclick="JGtestprint()" type="button">测试打印</button>
 </br></br>
-   <button onclick="test1()" type="button">测试打印1</button>
+   <button onclick="JGtestprinta()" type="button">测试打印1</button>
 </br></br>
-   <button onclick="test2()" type="button">测试打印2</button>
+   <button onclick="JGtestprintb()" type="button">测试打印2</button>
 </br></br>
-   <button onclick="test3()" type="button">测试打印3</button>
+   <button onclick="JGtestprintc()" type="button">测试打印3</button>
 </br></br>
   <video id="video1" src="https://gxyzpt.oss-cn-beijing.aliyuncs.com/1.mp4" controls="controls" autoplay height="100%" width="100%">您的浏览器不支持。</video>
         <button type="button" style="text-align: center;" onclick="launchFullScreen(document.getElementById('video1'))">全屏</button>
