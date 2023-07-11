@@ -2,31 +2,33 @@
   <head>
   <script src="https://staticorigin.ydbimg.com/API/YdbOnline.js" type="text/javascript"></script>
   <script type="text/javascript">
-    var YDB = new YDBOBJ();
-      
-     function testYdbWxPay(){
-      YdbOpenJs.QMFWxPay("123456",document.getElementById("id").value,"name","subscribe"document.getElementById("amount").value,""); 
-    }
-    function testYdbAliPay(){
-      YdbOpenJs.QMFZfbPay("123456",document.getElementById("id").value,"name","subscribe"document.getElementById("amount").value); 
-    }
-    function testYdbCloudQucikPay(){
-      YdbOpenJs.QMFYsfPay("898310148160568","123456",document.getElementById("id").value,"name","subscribe"document.getElementById("amount").value); 
-    }
     function testPrint(){
       window.supmobilejs.openQRCode(test());
+    }
+
+    function testPrint1(){
+      window.alert("123455");
+    }
+
+    function testPrint2(){
+      window.supmobilejs.referenceChooseResult("1234",null);
+    }
+
+    function testPrint3(){
+      window.supmobilejs.testPrint("123",null);
+    }
+
+    function testPrint4(){
+      window.testPrint("123",null);
     }
     </script>
     </head>
 <body>
-
-  价格:<input id="amount" type="text" value=""/></br>
-  订单号:<input id="id" type="text" value=""/></br>
-    <br/> <br/>
-<button onclick="testYdbWxPay()" type="button">Test Ydb WxPay!!!</button>
-    <button onclick="testYdbAliPay()" type="button">Test Ydb AliPay!!!</button>
-    <button onclick="testYdbCloudQucikPay()" type="button">Test Ydb CloudQucikPay!!!</button> <br/>
 <button onclick="testPrint()" type="button">测试按钮</button> <br/>
+  <button onclick="testPrint()" type="button">测试按钮1</button> <br/>
+  <button onclick="testPrint()" type="button">测试按钮2</button> <br/>
+  <button onclick="testPrint()" type="button">测试按钮3</button> <br/>
+  <button onclick="testPrint()" type="button">测试按钮4</button> <br/>
  <br/> <br/> <br/>
 </body>
 </html>
