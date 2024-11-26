@@ -1,8 +1,13 @@
 <html>
   <head>
   <script type="text/javascript">
+
+    function getString(str){
+      window.alert(str);
+    }
+    
     function testPrint(){
-      window.supmobilejs.brunpPrint("[{\"params\":[{\"type\":\"CPage\",\"width\":100,\"height\":200},{\"type\":\"CText\",\"x\":100,\"y\":200,\"content\":\"测试文本\",\"font\":2},{\"type\":\"CQRCode\",\"x\":100,\"y\":200,\"content\":\"测试文本\",\"charSet\":\"utf-8\",\"width\":3}]},{\"params\":[{\"type\":\"CPage\",\"width\":100,\"height\":200}]}]",null);
+      window.supmobilejs.brunpPrint("[{\"params\":[{\"type\":\"CPage\",\"width\":100,\"height\":200},{\"type\":\"CText\",\"x\":100,\"y\":200,\"content\":\"测试文本\",\"font\":2},{\"type\":\"CQRCode\",\"x\":100,\"y\":200,\"content\":\"测试文本\",\"charSet\":\"utf-8\",\"width\":3}]},{\"params\":[{\"type\":\"CPage\",\"width\":100,\"height\":200}]}]",getString);
     }
 
     function testPrinta(){
