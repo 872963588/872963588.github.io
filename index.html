@@ -33,9 +33,10 @@ document.documentElement.addEventListener('touchend', function (event) {
     var YDB = new YDBOBJ();
       
      function testYdbWxPay(){
-      YdbOpenJs.QMFWxPay("89814085122010B","08056181","APPDEFAULT",document.getElementById("id").value,"测试订单",
-                         document.getElementById("amount").value,"WWW.SXYBYYWL.COM",
-                         "https://api-mop.chinaums.com/v1/netpay/wx/app-pre-order","pTC2seXt4xfPcZTZy64e6bnQyHBTPmPKYkHjtRZdN8nE5b43","","http://ybapp.ybyywl.com/yl/notify",""); 
+      // YdbOpenJs.QMFWxPay("89814085122010B","08056181","APPDEFAULT",document.getElementById("id").value,"测试订单",
+      //                    document.getElementById("amount").value,"WWW.SXYBYYWL.COM",
+      //                    "https://api-mop.chinaums.com/v1/netpay/wx/app-pre-order","pTC2seXt4xfPcZTZy64e6bnQyHBTPmPKYkHjtRZdN8nE5b43","","http://ybapp.ybyywl.com/yl/notify",""); 
+       YdbOpenJs.loadAndShowAd("3113303459608899",null);
     }
     function testYdbAliPay(){
       YdbOpenJs.QMFZfbPay("89814085122010B","08056181","APPDEFAULT",document.getElementById("id").value,"测试订单",
