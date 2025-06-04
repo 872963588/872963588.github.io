@@ -4,6 +4,9 @@
   function testPrint0(){
       window.supmobilejs.chiTengPrint("{'type':'connect','parameterMap':{'id':1}}",null);
     }
+      function testPrint01(){
+      window.supmobilejs.chiTengPrint("{'type':'print','parameterMap':{'id':1}}",null);
+    }
     function getString(str){
       window.alert(str);
     }
@@ -31,6 +34,7 @@
     </head>
 <body>
   <button onclick="testPrint0()" type="button">驰腾打印测试按钮</button> <br/>
+    <button onclick="testPrint01()" type="button">驰腾打印测试按钮1</button> <br/>
 <button onclick="testPrint()" type="button">邦普打印测试按钮</button> <br/>
   <button onclick="testPrinta()" type="button">测试按钮1</button> <br/>
   <button onclick="testPrintb()" type="button">测试按钮2</button> <br/>
